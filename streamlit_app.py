@@ -11,12 +11,12 @@ with st.expander('Data'):
   df 
 
   st.write('**X**')
-  X = df.drop('species', axis=1)
-  X
+  X_raw = df.drop('species', axis=1)
+  X_raw
 
   st.write('**y**') 
-  y = df.species
-  y
+  y_raw = df.species
+  y_raw
 
 with st.expander('Data Visualization'):
   # "bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g"
